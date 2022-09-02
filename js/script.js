@@ -1,11 +1,11 @@
 (function($) {
   'use strict';
-      /*======================= 
-        01. Wow Active 
+      /*=======================
+        01. Wow Active
       ======================*/
       new WOW().init();
 
-      /*======================= 
+      /*=======================
         02. Timer
       ======================*/
       var ClockDate = $('#clock').data( "date" );
@@ -19,7 +19,7 @@
           + '</ul>'
           ));
       });
-      /*======================= 
+      /*=======================
         03. Brand Logo Carousel Slider
       ======================*/
       $('.brand-logos').owlCarousel({
@@ -41,7 +41,7 @@
               }
           }
       });
-      /*======================= 
+      /*=======================
         04. Roadmap Slider Carousel Slider
       ======================*/
       $('.roadmap-slider').owlCarousel({
@@ -115,8 +115,8 @@
               }
           }
       });
-      
-      
+
+
       /*===============================
         05. Blog Slider Carousel Slider
       ==================================*/
@@ -287,7 +287,7 @@
           ]
         });
       }
-      
+
 
       /*===============================
         07. Mobile Menu
@@ -316,7 +316,7 @@
           }
         });
       }
-      
+
 })(jQuery);
 
 equalheight = function(container){
@@ -440,3 +440,10 @@ $(document).ready(function($) {
   $(window).scroll(benefitanimateElements);
 });
 
+function showTip() {
+  console.log('tip')
+  $('.alert-layout').show()
+  setTimeout(() => {
+    $('.alert-layout').hide()
+  }, 2000)
+}

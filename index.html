@@ -189,29 +189,51 @@
                 </p>
 
                 <div class="hero-btns" style="margin-top: 30px">
-                  <a
-                    href="node.html"
-                    class="btn"
-                    style="
-                      border: none;
-                      border-radius: 30px;
-                      box-shadow: 0px 5px 10px 0px rgba(244, 184, 65, 0.5);
-                      background: linear-gradient(
+<!--                  <a-->
+<!--                    href="node.html"-->
+<!--                    class="btn"-->
+<!--                    style="-->
+<!--                      border: none;-->
+<!--                      border-radius: 30px;-->
+<!--                      box-shadow: 0px 5px 10px 0px rgba(244, 184, 65, 0.5);-->
+<!--                      background: linear-gradient(-->
+<!--                        90deg,-->
+<!--                        #c2801e 0%,-->
+<!--                        #f5b941 100%-->
+<!--                      );-->
+<!--                      min-width: 250px;-->
+<!--                      color: #fff;-->
+<!--                    "-->
+<!--                  >-->
+<!--                    JOIN NODE →-->
+<!--                  </a>-->
+                  <div class="btn"
+                       style="
+                       border: none;
+                       border-radius: 30px;
+                       box-shadow: 0px 5px 10px 0px rgba(244, 184, 65, 0.5);
+                       background: linear-gradient(
                         90deg,
                         #c2801e 0%,
                         #f5b941 100%
                       );
                       min-width: 250px;
                       color: #fff;
+                      cursor: pointer;
                     "
+                       onclick="showTip()"
                   >
                     JOIN NODE →
-                  </a>
-
+                  </div>
                   <!-- <a href="https://bountybhc.com" class="btn btn3"
                   style="border:none;border-radius: 50px;background:#5FBD8E;min-width: 300px;">
                   <img src="images/logowhitte.png" alt="" style="padding-right: 5px;">
                   BOUNTY HUNTER</a> -->
+                </div>
+              </div>
+              <div class="alert-layout fadeIn fadeOut" style="display: none">
+                <div class="alert-box alert alert-warning" role="alert">
+                  <strong>Coming soon</strong>
                 </div>
               </div>
 
@@ -285,8 +307,8 @@
                 Professionally-managed Sets like the Defi POP Protocol Index
                 make crypto diversification simple.
               </p>
-              <div class="my-button-wrapper">
-                <a href="#" style="color: #fff">VIEW POP Protocol</a>
+              <div class="my-button-wrapper" onclick="showTip()">
+                <div style="color: #fff">VIEW POP Protocol</div>
               </div>
             </div>
           </div>

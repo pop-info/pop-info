@@ -188,24 +188,43 @@
                 </p>
 
                 <div class="hero-btns" style="margin-top: 30px">
-                  <a
-                    href="nodeCN.html"
-                    class="btn"
-                    style="
-                      border: none;
-                      border-radius: 30px;
-                      box-shadow: 0px 5px 10px 0px rgba(244, 184, 65, 0.5);
-                      background: linear-gradient(
+<!--                  <a-->
+<!--                    href="nodeCN.html"-->
+<!--                    class="btn"-->
+<!--                    style="-->
+<!--                      border: none;-->
+<!--                      border-radius: 30px;-->
+<!--                      box-shadow: 0px 5px 10px 0px rgba(244, 184, 65, 0.5);-->
+<!--                      background: linear-gradient(-->
+<!--                        90deg,-->
+<!--                        #c2801e 0%,-->
+<!--                        #f5b941 100%-->
+<!--                      );-->
+<!--                      min-width: 250px;-->
+<!--                      color: #fff;-->
+<!--                    "-->
+<!--                  >-->
+<!--                    加入节点 →-->
+<!--                  </a>-->
+                  <div class="btn"
+                       style="
+                       border: none;
+                       border-radius: 30px;
+                       box-shadow: 0px 5px 10px 0px rgba(244, 184, 65, 0.5);
+                       background: linear-gradient(
                         90deg,
                         #c2801e 0%,
                         #f5b941 100%
                       );
                       min-width: 250px;
                       color: #fff;
+                      cursor: pointer;
                     "
+                       onclick="showTip()"
                   >
                     加入节点 →
-                  </a>
+                  </div>
+
 
                   <!-- <a href="https://bountybhc.com" class="btn btn3"
                   style="border:none;border-radius: 50px;background:#5FBD8E;min-width: 300px;">
@@ -213,6 +232,12 @@
                   BOUNTY HUNTER</a> -->
                 </div>
               </div>
+              <div class="alert-layout fadeIn fadeOut" style="display: none">
+                <div class="alert-box alert alert-warning" role="alert">
+                  <strong>敬请期待</strong>
+                </div>
+              </div>
+
 
               <div class="topimgs col-sm-12 col-lg-12 wow fadeIn">
                 <p style="margin: 30px 0; font-size: 18px; text-align: center">
@@ -280,8 +305,9 @@
               <p class="lead" style="margin: 30px 0; color: #fff">
                 Defi POP 协议索引等专业管理的集合使加密货币多样化变得简单
               </p>
-              <div class="my-button-wrapper">
-                <a href="#" style="color: #fff">查看 POP 协议</a>
+              <div class="my-button-wrapper" onclick="showTip()">
+<!--                <a href="#" style="color: #fff">查看 POP 协议</a>-->
+                <div style="color: #fff">查看 POP 协议</div>
               </div>
             </div>
           </div>
