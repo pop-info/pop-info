@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Responsive Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- favicon & bookmark -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="images/bookmark.png"
+      type="image/x-icon"
+    />
+    <link rel="shortcut icon" href="imgs/logo (10).png" type="image/x-icon" />
+    <!-- Font Family -->
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800"
+      rel="stylesheet"
+    />
+    <!-- Website Title -->
+    <title>POP</title>
+    <!-- Stylesheets Start -->
+    <link rel="stylesheet" href="css/fontawesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/mycss.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="css/fancybox/jquery.fancybox.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <!-- Stylesheets End -->
+    <!--[if lt IE 9
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+    ><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+  </head>
+
+  <body>
+    <!--Main Wrapper Start-->
+    <div class="wrapper" id="top">
+      <!--Header Start -->
+      <header style="background: #000000">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 logo">
+              <a href="index.html" title="Cp Platinum">
+                <img
+                  class="light smalllogo"
+                  src="imgs/toplogo.png"
+                  alt="Cp Platinum"
+                />
+                <img
+                  class="dark smalllogo"
+                  src="imgs/toplogo.png"
+                  alt="Cp Platinum"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-8 main-menu">
+              <div class="menu-icon">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+              </div>
+              <nav class="onepage">
+                <ul style="color: #ffffff">
+                  <li class="active">
+                    <a href="#top" style="color: #ffffff">首页</a>
+                  </li>
+                  <li>
+                    <a href="nodeCN.html" style="color: #ffffff"> 节点</a>
+                  </li>
+                  <li><a href="" style="color: #ffffff">协议</a></li>
+                  <li>
+                    <a
+                      href="https://pop-protocol.gitbook.io/pop-protocol/"
+                      style="color: #ffffff"
+                      >官方文档</a
+                    >
+                  </li>
+                  <!-- <li><a href="#press">PRCESS</a></li> -->
+                  <!-- <li><a href="#team" style="color: #ffffff;">TEAM</a></li> -->
+                  <li>
+                    <!-- <a href="#Contract" style="color: #ffffff">CONTACT </a> -->
+                  </li>
+                  <li class="MobileHiding">
+                    <!-- <div class="thePurse" id="isEthereum">Connect Wallet</div> -->
+                    <div class="account">
+                      <div style="position: relative">
+                        <div>
+                          <!-- <img src="images/wallet.png" > -->
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="lng_dropdown" style="position: relative">
+                      <div
+                        class="ddTitle borderRadiusTp cursorPointer"
+                        style="display: flex"
+                        onclick="changeLanguage()"
+                      >
+                        <!--  -->
+                        <span class="ddTitleText">
+                          <img
+                            class="smallCN"
+                            src="imgs/CN.png"
+                            style="width: 45px; height: 45px"
+                          />
+                        </span>
+                        <!-- en -->
+                      </div>
+
+                      <div
+                        id="selectNationality"
+                        class="ddChild ddchild_ border"
+                        style="
+                          display: none;
+                          z-index: 9999;
+                          position: absolute;
+                          top: 29px;
+                        "
+                      >
+                        <ul
+                          id="listFlag"
+                          style="margin-top: 0; background: none"
+                        >
+                          <li class="enabled _msddli_ selected">
+                            <img src="imgs/EN.png" />
+                            <!-- <span class="ddlabel">EN</span> -->
+                          </li>
+                          <li class="enabled _msddli_ selected">
+                            <img src="imgs/CN.png" />
+                            <!-- <span class="ddlabel">CN</span> -->
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--Header End-->
+
+      <!-- 顶部  -->
+      <div class="midd-container">
+        <!-- Hero Section Start -->
+        <div
+          class="hero-main platinum-layout white-sec"
+          style="background-image: url(imgs/bck4.jpg)"
+        >
+          <div class="container">
+            <div
+              class="row row-reverse align-items-center justify-content-center"
+            >
+              <div
+                id="comeEnd"
+                class="col-sm-12 hero-caption wow fadeIn text-center"
+              >
+                <!-- <img src="imgs/CHASERBEE.png" alt=""> -->
+                <h2 style="font-size: 88px" class="mystitle">
+                  <span style="color: rgba(245, 185, 65, 1)">Defi 世界</span
+                  >的资产管理
+                </h2>
+
+                <p class="lead" style="margin-top: 20px; font-size: 24px">
+                  借助 POP 协议的领先优势，将您的加密策略变为现实
+                  投资组合管理工具
+                </p>
+
+                <div class="hero-btns" style="margin-top: 30px">
+                  <a
+                    href="nodeCN.html"
+                    class="btn"
+                    style="
+                      border: none;
+                      border-radius: 30px;
+                      box-shadow: 0px 5px 10px 0px rgba(244, 184, 65, 0.5);
+                      background: linear-gradient(
+                        90deg,
+                        #c2801e 0%,
+                        #f5b941 100%
+                      );
+                      min-width: 250px;
+                      color: #fff;
+                    "
+                  >
+                    加入节点 →
+                  </a>
+
+                  <!-- <a href="https://bountybhc.com" class="btn btn3"
+                  style="border:none;border-radius: 50px;background:#5FBD8E;min-width: 300px;">
+                  <img src="images/logowhitte.png" alt="" style="padding-right: 5px;">
+                  BOUNTY HUNTER</a> -->
+                </div>
+              </div>
+
+              <div class="topimgs col-sm-12 col-lg-12 wow fadeIn">
+                <p style="margin: 30px 0; font-size: 18px; text-align: center">
+                  受信任
+                </p>
+                <img
+                  class="col-4 col-lg-13"
+                  src="imgs/defi-pulse-logo.png"
+                  alt=""
+                />
+                <img
+                  class="col-4 col-lg-13"
+                  src="imgs/coionshares.png"
+                  alt=""
+                />
+                <img
+                  class="col-4 col-lg-13"
+                  src="imgs/ember-fund-logo.png"
+                  alt=""
+                />
+                <img
+                  class="col-4 col-lg-13"
+                  src="imgs/sw-capital-logo.png"
+                  alt=""
+                />
+                <img class="col-4 col-lg-13" src="imgs/bankle.png" alt="" />
+
+                <img
+                  class="offset-xl-1 col-4 col-lg-13"
+                  src="imgs/index-logo.png"
+                  alt=""
+                />
+                <img class="col-4 col-lg-13" src="imgs/yam-logo.png" alt="" />
+                <img class="col-4 col-lg-13" src="imgs/bck6.png" alt="" />
+                <img class="col-4 col-lg-13" src="imgs/moonquant.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Hero Section End -->
+      </div>
+
+      <!-- 左右 1 -->
+      <div
+        class="about-section p-tb"
+        id="about"
+        style="background: #0c0d0d !important"
+      >
+        <div class="container">
+          <div class="row row-reverse align-items-center">
+            <div class="col-lg-6 col-md-12 wow fadeIn">
+              <div class="popbckbox">
+                <img class="col-10" src="imgs/popbck.png" alt="About ICO" />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 wow fadeIn">
+              <h4 style="font-size: 40px">
+                <span style="font-size: 24px; color: #f5b941">先知实验室 </span>
+                <br />
+
+                <span style="color: #f5b941">为 Defi POP 协议 </span>
+                <span style="color: #fff">等优秀产品提供支持 </span>
+              </h4>
+
+              <p class="lead" style="margin: 30px 0; color: #fff">
+                Defi POP 协议索引等专业管理的集合使加密货币多样化变得简单
+              </p>
+              <div class="my-button-wrapper">
+                <a href="#" style="color: #fff">查看 POP 协议</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 左右 2 -->
+      <div
+        class="about-section p-tb"
+        id="about"
+        style="background: #0c0d0d !important"
+      >
+        <div class="container">
+          <div class="row row-reverse align-items-center wow fadeIn">
+            <div class="col-lg-6 col-md-12">
+              <p style="color: #f5b941; font-size: 24px">交易和收益生成</p>
+              <h4 style="color: #fff; font-size: 40px">TX 强大的 DeFi 算法</h4>
+              <img src="imgs/bottom.png" alt="" />
+              <p class="lead" style="color: #fff">
+                通过合约自动将质押的币种进行撮合配对及跨链置换、质押等方式
+                获取实时最高动态收益，对冲无常损失，获取收益，解决了机枪池的痛点
+                无论目标池怎样调整只要有利益就可以调用策略，并且自动帮用户避免了无常损失
+              </p>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+              <div class="platinum-img-box">
+                <img src="imgs/bck9.png" alt="About ICO" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 上下 -->
+      <div class="p-tb" style="background: #0c0d0d !important">
+        <div class="container">
+          <p style="color: #f5b941; font-size: 24px">创建、管理和发展</p>
+          <p style="color: #fff; font-size: 40px">这个怎么运作？</p>
+          <p style="color: #fff; font-size: 24px; margin: 60px 0">
+            资产经理使用专业工具，帮助您创建、管理和发展您的资产
+          </p>
+
+          <div class="row">
+            <div class="col-12 col-md-4 m-auto">
+              <div class="threebox m-auto">
+                <img src="imgs/one.png" alt="" />
+                <p class="p1">POP银行</p>
+                <p class="p2">自动添加LP获利 <br />稳定20%-100%复利</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 m-auto">
+              <div class="threebox m-auto">
+                <img src="imgs/two.png" alt="" />
+                <p class="p1">POP 价值</p>
+                <p class="p2">无限螺旋上涨</p>
+                <p class="p2">铸造兑换，人人平等</p>
+                <p class="p2">没有早期IDO</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 m-auto">
+              <div class="threebox m-auto">
+                <img src="imgs/three.png" alt="" />
+                <p class="p1">TX算法</p>
+                <p class="p2">双机枪池+预言机</p>
+                <p class="p2">匹配LP对冲无常损失</p>
+                <p class="p2">乘积公式+自动收益调整</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 视频 -->
+      <div class="p-tb smallvideo" style="background: #0c0d0d !important">
+        <div class="container">
+          <a href="#">
+            <img class="col-12 col-md-12" src="imgs/video.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <div class="bottom_footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 left footerbox">
+                <img src="imgs/toplogo.png" alt="" style="margin-right: 30px" />
+                <p style="color: #f5b941">
+                  Defi POP 协议 <br />
+                  <span style="color: #fff">循环价值 万倍基因</span>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-12 myicon">
+                <a href="https://twitter.com/ProphetLab"
+                  ><img
+                    src="imgs/twitter.png"
+                    alt=""
+                    style="margin-right: 19px"
+                /></a>
+                <a href="">
+                  <img src="imgs/redit.png" alt="" style="margin-right: 19px"
+                /></a>
+                <a href="https://pop-protocol.gitbook.io/pop-protocol/">
+                  <img src="imgs/medium_.png" alt="" style="margin-right: 19px"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--Main Wrapper End-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/circle-progress.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/onpagescroll.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/chart-function.js"></script>
+    <script src="js/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/gold-app.js"></script>
+    <script src="js/definition.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function () {
+        setTimeout(function () {}, 1000);
+        setTimeout(function () {
+          jQuery(".platinum-animation .lines").addClass("active");
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>
