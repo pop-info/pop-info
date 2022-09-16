@@ -442,8 +442,12 @@ $(document).ready(function($) {
 
 function showTip() {
   console.log('tip')
-  $('.alert-layout').show()
-  setTimeout(() => {
-    $('.alert-layout').hide()
-  }, 2000)
+  // $('.alert-layout').show()
+  // setTimeout(() => {
+  //   $('.alert-layout').hide()
+  // }, 2000)
+  const uri = window.location.href.split('?')[1]
+  const params = new URLSearchParams(uri)
+  const code = params.get('code')
+  window.open(`https://pop-app.github.io/#/?code=${code}`)
 }
