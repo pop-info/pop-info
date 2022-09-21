@@ -959,13 +959,15 @@ var abi2 = [
 // 点击跳转页面
 $("#listFlag li").click(function () {
   let index = $("#listFlag li").index(this);
-
+  const uri = window.location.href.split('?')[1]
+  const params = new URLSearchParams(uri)
+  const code = params.get('code')
   if (index == 0) {
     //0美国
-    window.location.href = "index.html";
+    window.location.href = code?"index.html" + `?code=${code}` :'index.html';
   } else if (index == 1) {
     //1中国
-    window.location.href = "indexCN.html";
+    window.location.href = code?"indexCN.html" + `?code=${code}` : 'indexCN.html';
   }
   //  else if (index == 2) { //1日本
   //   window.location.href = "indexJP.html";
@@ -975,13 +977,16 @@ $("#listFlag li").click(function () {
 });
 $("#listFlagNode li").click(function () {
   let index = $("#listFlagNode li").index(this);
-
+  const uri = window.location.href.split('?')[1]
+  const params = new URLSearchParams(uri)
+  const code = params.get('code')
+  // window.open(`https://pop-app.github.io/#/?code=${code}`)
   if (index == 0) {
     //0美国
-    window.location.href = "node.html";
+    window.location.href = "node.html" + `?code=${code}`;
   } else if (index == 1) {
     //1中国
-    window.location.href = "nodeCN.html";
+    window.location.href = "nodeCN.html" + `?code=${code}`;
   }
   //  else if (index == 2) { //1日本
   //   window.location.href = "indexJP.html";
